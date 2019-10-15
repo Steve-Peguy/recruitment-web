@@ -1,5 +1,7 @@
 package fr.d2factory.libraryapp.member;
 
+import java.math.BigDecimal;
+
 import fr.d2factory.libraryapp.library.Library;
 
 /**

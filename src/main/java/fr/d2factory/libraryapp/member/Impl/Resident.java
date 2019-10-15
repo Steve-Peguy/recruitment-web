@@ -1,10 +1,10 @@
 package fr.d2factory.libraryapp.member.impl;
 
-import fr.d2factory.libraryapp.member.Member;
+import static fr.d2factory.libraryapp.member.impl.FirstYearStudent.leftToPayAtStandardAndLateRate;
 
 import java.math.BigDecimal;
 
-import static fr.d2factory.libraryapp.member.impl.FirstYearStudent.leftToPayAtStandardAndLateRate;
+import fr.d2factory.libraryapp.member.Member;
 
 public class Resident extends Member {
 

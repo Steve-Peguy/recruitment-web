@@ -17,12 +17,12 @@ public class BookRepository {
     private final Map<ISBN, Book> availableBooks = new HashMap<>();
     private final Map<Book, LocalDate> borrowedBooks = new HashMap<>();
 
-   
+    
     public void addBooks(final List<Book> books) {
-        books.forEach(book -> availableBooks.put(book.getIsbn(), book));
+        books.forEach(bk -> availableBooks.put(bk.getIsbn(), bk));
     }
 
-    
+    //Vérifie si une livre est au moins present ou sinon retourer Optional.empty()
     public Optional<Book> findBook(final ISBN isbnCode) {
         return Optional.ofNullable(availableBooks.get(isbnCode));
     }
